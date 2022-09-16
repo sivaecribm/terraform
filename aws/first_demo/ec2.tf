@@ -3,9 +3,9 @@ resource "aws_instance" "myawsserver" {
   instance_type = "t2.nano"
 
   tags = {
-    Name = "Gagandeep-aws-ec2-instance-Nomura v2"
-    Env = "test"
-    Owner = "Gagandeep"
+    Name = "SivaCICD"
+    Env = "Prod"
+    Owner = "SivaCICDpipeling"
   }
 }
 
@@ -16,6 +16,3 @@ output "myawsserver-ip" {
 output "myserver-PrivateIP" {
   value = aws_instance.myawsserver.private_ip
 }
-
-
-
