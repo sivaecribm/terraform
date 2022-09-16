@@ -4,7 +4,7 @@ resource "aws_instance" "myawsserver" {
 
   tags = {
     Name = "SivaCICD"
-    Env = "Prod"
+    #Env = "Prod"
     Owner = "SivaCICDpipeling"
     App = "Atlas"
   }
