@@ -6,6 +6,7 @@ resource "aws_instance" "myawsserver" {
     Name = "SivaCICD"
     Env = "Prod"
     Owner = "SivaCICDpipeling"
+    App = "Atlas"
   }
 }
 
